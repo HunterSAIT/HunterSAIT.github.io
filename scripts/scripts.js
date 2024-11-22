@@ -27,7 +27,7 @@ var duration = 0;
 // INSERT YOUR CODE HERE
 
 
-var recalculate = function ()
+function recalculate()
     {
         let costLabel = document.getElementById("calculated-cost");
         if (modelName === "XYZ")
@@ -67,7 +67,7 @@ var recalculate = function ()
 
 let modelButton = document.getElementById("model-button");
 modelButton.addEventListener("click", changeModel);
-var changeModel = function()
+function changeModel()
     {
         var modelText = document.getElementById("model-text");
         if (modelName === "XYZ")
@@ -110,7 +110,7 @@ var changeModel = function()
 
 let durationButton = document.getElementById("duration-button");
 durationButton.addEventListener("click", changeDuration);
-var changeDuration = function()
+function changeDuration()
     {
         var durationText = document.getElementById("duration-text");
         var newduration = prompt("Enter duration please:");
