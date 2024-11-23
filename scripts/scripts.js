@@ -30,16 +30,17 @@ var duration = 0;
 function recalculate()
     {
         let costLabel = document.getElementById("calculated-cost");
+        var newCost;
         if (modelName === "XYZ")
         {
-            var newCost = Number(duration) * 100;
+            newCost = Number(duration) * 100;
             costLabel.innerHTML = newCost;
         }
         else
         {
             if (modelName === "CPRG")
             {
-                var newCost = Number(duration) * 213;
+                newCost = Number(duration) * 213;
                 costLabel.innerHTML = newCost;
             }
             else
@@ -116,6 +117,6 @@ function changeDuration()
         var newduration = prompt("Enter duration please:");
         duration = newduration;
         durationText.innerHTML = newduration;
-        recalculate()
+        recalculate();
     }
 
